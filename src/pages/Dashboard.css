@@ -1,0 +1,56 @@
+/* Container for whole dashboard page */
+.dashboard-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f6f9; 
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Dashboard card area */
+.dashboard-card {
+  width: 100%;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Header row */
+.dashboard-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 12px;
+}
+
+.dashboard-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Filters row */
+.dashboard-filters {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.dashboard-filters .ant-input-search,
+.dashboard-filters .ant-select {
+  flex: 1;
+  min-width: 180px;
+}
+
+
+@media (min-width: 1200px) {
+  .dashboard-card {
+    width: 100%;
+  }
+}

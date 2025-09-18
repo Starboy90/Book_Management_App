@@ -1,0 +1,106 @@
+.book-table {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Zebra row effect */
+.book-table .ant-table-tbody > tr:nth-child(odd) > td {
+  background: #fafafa;
+}
+
+/* Hover row highlight */
+.book-table .ant-table-tbody > tr:hover > td {
+  background: #e6f7ff !important;
+  transition: background 0.3s ease;
+}
+
+/* Status tags */
+.status-available {
+  background-color: #f6ffed;
+  color: #389e0d;
+  border: 1px solid #b7eb8f;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-issued {
+  background-color: #fff1f0;
+  color: #cf1322;
+  border: 1px solid #ffa39e;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Action buttons */
+.action-edit {
+  color: #1677ff !important;
+  font-weight: 500;
+}
+
+.action-delete {
+  color: #cf1322 !important;
+  font-weight: 500;
+}
+
+/* Pagination styling */
+.book-table .ant-pagination {
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.book-table .ant-pagination-item-active {
+  border-color: #1677ff;
+}
+
+.book-table .ant-pagination-item-active a {
+  color: #1677ff;
+  font-weight: bold;
+}
+
+
+
+/* Tablet (≤ 768px) */
+@media (max-width: 768px) {
+  .book-table .ant-table {
+    font-size: 13px;
+  }
+  .book-table .ant-table-thead > tr > th,
+  .book-table .ant-table-tbody > tr > td {
+    padding: 6px 6px;       
+    white-space: normal;    
+    word-break: break-word; 
+  }
+  .book-table .status-available,
+  .book-table .status-issued {
+    font-size: 11px;
+    padding: 1px 5px;
+  }
+}
+
+/* Mobile (≤ 480px) */
+@media (max-width: 480px) {
+  .book-table .ant-table {
+    font-size: 11px;
+  }
+  .book-table .ant-table-thead > tr > th,
+  .book-table .ant-table-tbody > tr > td {
+    padding: 4px 4px; 
+    white-space: normal;
+    word-break: break-word;
+  }
+  .book-table .status-available,
+  .book-table .status-issued {
+    font-size: 10px;
+    padding: 1px 4px;
+  }
+  .book-table .ant-pagination {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+}
