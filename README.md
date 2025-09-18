@@ -89,6 +89,6 @@ Configure build command: npm run build
 Publish → Done 🎉
 
 🧑‍💻 Author
-
 Made with ❤️ by MohmadSohilkhan
+
 If you like this project, ⭐ the repo and share feedback!
