@@ -1,69 +1,94 @@
-# React + TypeScript + Vite
+📚 Book Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive Book Management Dashboard built with React (Vite + TypeScript), Ant Design, and React Query.
+It demonstrates full CRUD operations, search, filters, pagination, loading states, and a professional UI — perfect for portfolios or real-world book inventory systems.
 
-Currently, two official plugins are available:
+✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+📖 Dashboard: View and manage all books.
 
-## Expanding the ESLint configuration
+🔍 Search & Filters: Filter by title, author, genre, and status.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+➕ Add / Edit Books with validation forms.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+❌ Delete Books with confirmation popup.
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+🌀 Loading states: Skeletons & spinners for smooth UX.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🎶 Sound effects when opening popups (optional).
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+⚡ React Query for API fetching, caching, and mutations.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🎨 Ant Design + custom CSS for a modern, responsive design.
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🛠️ Tech Stack
+
+Frontend: React (Vite + TypeScript)
+
+UI Library: Ant Design
+
+State & Data: React Query
+
+Backend (Mock API): JSON Server / CRUDCRUD API
+
+Styling: Ant Design + custom CSS
+
+📂 Project Structure
+book-management-app/
+│── public/              # Static assets (icons, sounds, etc.)
+│── src/
+│   ├── api/             # API calls (CRUD functions)
+│   ├── components/      # Reusable components (Table, Form, Modal)
+│   ├── hooks/           # React Query custom hooks
+│   ├── pages/           # Dashboard page
+│   ├── types/           # TypeScript types (Book, NewBook, etc.)
+│   ├── utils/           # Utilities (e.g. playSound)
+│   ├── App.tsx          # Root component
+│   └── main.tsx         # Entry point
+│── db.json              # Mock data (for JSON Server)
+│── package.json
+│── vite.config.ts
+│── README.md
+│── .gitignore
+
+⚙️ Getting Started
+1️⃣ Clone the repo
+git clone https://github.com/your-username/book-management-app.git
+cd book-management-app
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Start mock backend (JSON Server)
+npx json-server --watch db.json --port 3001
+
+4️⃣ Run the app
+npm run dev
+
+
+Now open 👉 http://localhost:5173
+
+📸 Screenshots
+<img width="1208" height="1210" alt="Book_Management_App" src="https://github.com/user-attachments/assets/9e21e567-5058-4d06-b870-4f32d729ae89" />
+<img width="1226" height="1210" alt="localhost_5173_ (4)" src="https://github.com/user-attachments/assets/3fe6eb38-e5e5-4de0-8ddf-ced263c224f8" />
+<img width="1226" height="1210" alt="localhost_5173_ (1)" src="https://github.com/user-attachments/assets/6ea021e9-5ddf-438e-b6c8-4007eadbb6b3" />
+<img width="1226" height="1210" alt="localhost_5173_ (2)" src="https://github.com/user-attachments/assets/f78fb825-860a-47e4-918b-f8c1cb7d7eb0" />
+
+( screenshots of your dashboard, add/edit modal, delete popup, etc.)
+
+🚀 Deployment
+
+You can easily deploy this project on Vercel or Netlify:
+
+Push code to GitHub.
+
+Import repo into Vercel/Netlify.
+
+Configure build command: npm run build
+
+Publish → Done 🎉
+
+🧑‍💻 Author
+
+Made with ❤️ by MohmadSohilkhan
+If you like this project, ⭐ the repo and share feedback!
