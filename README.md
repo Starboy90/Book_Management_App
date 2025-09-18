@@ -3,6 +3,7 @@
 A responsive Book Management Dashboard built with React (Vite + TypeScript), Ant Design, and React Query.
 It demonstrates full CRUD operations, search, filters, pagination, loading states, and a professional UI — perfect for portfolios or real-world book inventory systems.
 
+https://book-management-app-new.vercel.app/
 ✨ Features
 
 📖 Dashboard: View and manage all books.
